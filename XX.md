@@ -6,7 +6,7 @@ Multi-sig Accounts
 
 `draft` `optional`
 
-Allow a group of accounts to define how they will sign messages together.
+Allow a group of accounts to define how they will sign messages together in a self-contained way.
 
 This NIP defines a method for attributing a Nostr event to a **multi-sig account** (`account_id`) even though the event is **signed by a different signer key**. The virtual account does not have a private key. Instead, a signed policy is published authorizing one or more signer keys to act for it under certain constraints. This policy can be published by anyone as the signed policy includes the signers, threshold and signatures to validate itself.
 
